@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1600" width="1600" height="1600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DCE5DC"/>
+      <stop offset="0.6" stop-color="#EFEADF"/>
+      <stop offset="1" stop-color="#EAE6DF"/>
+    </linearGradient>
+    <pattern id="hatch" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="16" stroke="#F6F3EC" stroke-width="3"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="1600" fill="url(#sky)"/>
+  <!-- sun -->
+  <circle cx="1050" cy="520" r="300" fill="#D97706"/>
+  <!-- arches -->
+  <g fill="none" stroke="#161615" stroke-width="5" opacity="0.55">
+    <path d="M250 1100V620a150 150 0 0 1 300 0v480"/>
+    <path d="M650 1100V560a150 150 0 0 1 300 0v540"/>
+    <path d="M1050 1100V620a150 150 0 0 1 300 0v480"/>
+    <path d="M150 1100H1450"/>
+  </g>
+  <!-- three figures -->
+  <g>
+    <circle cx="520" cy="860" r="92" fill="#161615"/>
+    <path d="M330 1600c0-380 80-560 190-560s190 180 190 560Z" fill="#161615"/>
+    <circle cx="800" cy="790" r="104" fill="#F6F3EC" stroke="#161615" stroke-width="6"/>
+    <path d="M580 1600c0-420 90-640 220-640s220 220 220 640Z" fill="#0F523E"/>
+    <path d="M580 1600c0-420 90-640 220-640s220 220 220 640Z" fill="url(#hatch)" opacity="0.35"/>
+    <circle cx="1080" cy="860" r="92" fill="#161615"/>
+    <path d="M890 1600c0-380 80-560 190-560s190 180 190 560Z" fill="#575551"/>
+  </g>
+  <g font-family="'JetBrains Mono', Menlo, monospace" font-size="30" fill="#161615" letter-spacing="5">
+    <text x="800" y="330" text-anchor="middle">PLACEHOLDER — REPLACE COMMUNITY.JPG</text>
+  </g>
+</svg>

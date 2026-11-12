@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500">
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#DDD8CE" stroke-width="1.5"/>
+    </pattern>
+    <pattern id="hatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="14" stroke="#161615" stroke-width="2.5"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="1500"/></clipPath>
+  </defs>
+  <rect width="1200" height="1500" fill="#EAE6DF"/>
+  <rect width="1200" height="1500" fill="url(#grid)"/>
+  <g clip-path="url(#frame)">
+    <!-- sun disc -->
+    <circle cx="790" cy="520" r="330" fill="#0F523E"/>
+    <!-- construction circles -->
+    <circle cx="600" cy="610" r="430" fill="none" stroke="#161615" stroke-width="2" stroke-dasharray="4 14"/>
+    <circle cx="600" cy="610" r="250" fill="none" stroke="#D97706" stroke-width="2" opacity="0.5"/>
+    <!-- bust -->
+    <path d="M150 1500C150 1180 340 1010 600 1010S1050 1180 1050 1500Z" fill="#161615"/>
+    <path d="M150 1500C150 1180 340 1010 600 1010S1050 1180 1050 1500Z" fill="url(#hatch)" opacity="0.25"/>
+    <rect x="520" y="820" width="160" height="240" rx="70" fill="#161615"/>
+    <ellipse cx="600" cy="610" rx="205" ry="250" fill="#F6F3EC" stroke="#161615" stroke-width="6"/>
+    <path d="M600 360V860M395 610H805" stroke="#DDD8CE" stroke-width="3"/>
+    <path d="M395 560C420 380 520 340 600 340S790 380 805 560C740 470 680 440 600 440S450 470 395 560Z" fill="#161615"/>
+  </g>
+  <!-- measurement ticks -->
+  <g stroke="#161615" stroke-width="3">
+    <path d="M60 120H140M60 120V200M1140 120H1060M1140 120V200M60 1380H140M60 1380V1300M1140 1380H1060M1140 1380V1300" fill="none"/>
+  </g>
+  <g font-family="'JetBrains Mono', Menlo, monospace" font-size="30" fill="#161615" letter-spacing="4">
+    <text x="170" y="132">PLACEHOLDER PLATE</text>
+    <text x="1030" y="1392" text-anchor="end" fill="#F6F3EC">MA — 4:5</text>
+  </g>
+</svg>

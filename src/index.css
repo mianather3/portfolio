@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #f6f3ec;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+  }
+
+  section[id] {
+    scroll-margin-top: 7.5rem;
+  }
+
+  ::selection {
+    background-color: #059669;
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 2px solid #059669;
+    outline-offset: 2px;
+  }
+
+  .font-mono,
+  code {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  /* Mono caption: section indices, figure numbers, spec labels. */
+  .idx {
+    @apply font-mono text-[11px] uppercase leading-none tracking-[0.14em] text-ink-3;
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .chip {
+    @apply inline-flex items-center rounded-full border border-line bg-paper px-2.5 py-1 font-mono text-[10.5px] uppercase leading-none tracking-[0.06em] text-ink-2;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold shadow-key transition-transform duration-150 active:translate-y-px;
+  }
+
+  .pill-link {
+    @apply inline-flex items-center gap-2 rounded-full border border-line bg-card px-3.5 py-2 text-[13px] font-medium text-ink transition-colors hover:border-ink;
+  }
+}
+
+/* SVG plate motion */
+@keyframes plate-flow {
+  to {
+    stroke-dashoffset: -16;
+  }
+}
+@keyframes plate-scan {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(168px);
+  }
+}
+@keyframes plate-step {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes live-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.plate-flow {
+  stroke-dasharray: 4 4;
+  animation: plate-flow 1.1s linear infinite;
+}
+.plate-scan {
+  animation: plate-scan 2.8s cubic-bezier(0.6, 0, 0.4, 1) infinite alternate;
+}
+.plate-step {
+  animation: plate-step 6.4s steps(16) infinite;
+}
+.live-dot {
+  animation: live-pulse 2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .plate-flow,
+  .plate-scan,
+  .plate-step,
+  .live-dot {
+    animation: none;
+  }
+}
