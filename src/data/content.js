@@ -158,7 +158,7 @@ export const EXPERIENCE = [
     dates: 'APR 2026 — PRESENT',
     bullets: [
       'Automated legal-tech contract telemetry across 50 US states on GPT-4o-mini, PostgreSQL, and AWS.',
-      'Built a deterministic citation validator that lifted precision from 7% to 100% across 360 test suites.',
+      'Built a deterministic citation validator that lifted precision from 7% to 100% across 360 test cases.',
     ],
     metric: '100%',
     caption: 'Citation precision',
