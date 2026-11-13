@@ -14,7 +14,7 @@ const WORKLOADS = [
     id: 'aether',
     tab: 'AetherLOB',
     channel: 'CH-1',
-    title: 'Tick-to-Trade & Cache-Line Inspector',
+    title: 'Order-Processing Latency & Cache-Line Inspector',
     readouts: [
       { value: '19.7M–21.5M', unit: 'msg/s', label: 'Lock-free SPSC throughput' },
       { value: '13M+', unit: 'payloads', label: 'Differential fuzzer validated' },
@@ -22,11 +22,11 @@ const WORKLOADS = [
     ],
     charts: [
       {
-        title: 'Tick-to-trade latency · Poisson arrivals',
+        title: 'Order-Processing Latency latency · Poisson arrivals',
         scale: '0 – 400 ns · lower is better',
         bars: [
-          { label: 'p50 tick-to-trade', display: '125 ns', pct: (125 / 400) * 100, tone: 'primary' },
-          { label: 'p99 tick-to-trade', display: '375 ns', pct: (375 / 400) * 100, tone: 'secondary' },
+          { label: 'p50 Order-Processing Latency', display: '125 ns', pct: (125 / 400) * 100, tone: 'primary' },
+          { label: 'p99 Order-Processing Latency', display: '375 ns', pct: (375 / 400) * 100, tone: 'secondary' },
         ],
       },
       {
