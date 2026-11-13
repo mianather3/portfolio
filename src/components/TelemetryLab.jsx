@@ -198,7 +198,7 @@ const SUMMARY = [
   { value: '125 ns', label: 'L3 p50' },
   { value: '35 ns', label: 'SIMD Dot' },
   { value: '20.5K req/s', label: 'HTTP' },
-  { value: '360', label: 'Test Suites' },
+  { value: '360', label: 'Test Cases' },
 ];
 
 export default function TelemetryLab() {
