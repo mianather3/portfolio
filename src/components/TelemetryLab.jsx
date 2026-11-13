@@ -82,7 +82,7 @@ const WORKLOADS = [
     title: 'Deterministic Verification',
     readouts: [
       { value: '100', unit: '%', label: 'Legal citation precision' },
-      { value: '360', unit: 'suites', label: 'Test suites' },
+      { value: '360', unit: 'cases', label: 'Test cases' },
       { value: '50', unit: 'states', label: 'US jurisdictions' },
     ],
     charts: [
