@@ -22,7 +22,7 @@ const WORKLOADS = [
     ],
     charts: [
       {
-        title: 'Order-Processing Latency latency · Poisson arrivals',
+        title: 'Order-Processing Latency · Poisson arrivals',
         scale: '0 – 400 ns · lower is better',
         bars: [
           { label: 'p50 Order-Processing Latency', display: '125 ns', pct: (125 / 400) * 100, tone: 'primary' },
