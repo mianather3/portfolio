@@ -44,7 +44,7 @@ export const TRACKS = [
 
 export const HERO_SPECS = [
   { value: '35', unit: 'ns', label: '768-dim SIMD dot' },
-  { value: '125', unit: 'ns', label: 'L3 tick-to-trade p50' },
+  { value: '125', unit: 'ns', label: 'L3 Order-Processing Latency p50' },
   { value: '21.5M', unit: 'msg/s', label: 'Lock-free SPSC' },
   { value: '100', unit: '%', label: 'Citation precision' },
 ];
@@ -84,8 +84,8 @@ export const PROJECTS = [
     stack: ['C++20', 'POSIX', 'Lock-Free SPSC', 'ASan/UBSan/TSan', 'Docker'],
     metrics: [
       { value: '19.7M–21.5M msg/s', label: 'Lock-free SPSC throughput', wide: true },
-      { value: '125 ns', label: 'p50 tick-to-trade, Poisson arrivals' },
-      { value: '375 ns', label: 'p99 tick-to-trade, Poisson arrivals' },
+      { value: '125 ns', label: 'p50 Order-Processing Latency, Poisson arrivals' },
+      { value: '375 ns', label: 'p99 Order-Processing Latency, Poisson arrivals' },
       { value: '0 B', label: 'Hot-path heap allocations' },
       { value: '13M+', label: 'Differential fuzzer payloads validated' },
     ],
