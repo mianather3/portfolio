@@ -164,17 +164,6 @@ export const EXPERIENCE = [
     caption: 'Citation precision',
   },
   {
-    org: 'University of Utah, Office of Admissions',
-    title: 'Data Assistant',
-    dates: 'JUN 2024 — PRESENT',
-    bullets: [
-      'Built Python/Pandas and SQL validation pipelines that audit 500+ student records.',
-      'Cut manual audit time by 30%.',
-    ],
-    metric: '-30%',
-    caption: 'Audit latency',
-  },
-  {
     org: 'Adobe',
     title: 'Student Ambassador',
     dates: 'NOV 2025 — PRESENT',
@@ -184,6 +173,17 @@ export const EXPERIENCE = [
     ],
     metric: '+40%',
     caption: 'GenAI adoption',
+  },
+  {
+    org: 'University of Utah, Office of Admissions',
+    title: 'Data Assistant',
+    dates: 'OCT 2025 — PRESENT',
+    bullets: [
+      'Built Python/Pandas and SQL validation pipelines that audit 500+ student records.',
+      'Cut manual audit time by 30%.',
+    ],
+    metric: '-30%',
+    caption: 'Audit latency',
   },
 ];
 
